@@ -1,0 +1,248 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('../public/images/farmacia.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-container {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  }
+  
+  .login-container h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .form_control {
+    margin-bottom: 15px;
+  }
+  
+  .form_control label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  .form_control input {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  .btn-submit {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .btn-submit:hover {
+    background-color: #0056b3;
+  }
+  
+  .error-message {
+    color: red;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  .dashboard-container {
+    display: flex;
+    height: 100vh;
+    margin: 0;
+    flex-direction: column;
+    align-items: center; /* Centrar el contenido horizontalmente */
+  }
+  
+  .dashboard-header {
+    background-color: rgba(248, 249, 250, 0.8); /* Fondo semitransparente */
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  .dashboard-header h1 {
+    font-size: 36px; /* Tamaño de fuente más grande */
+    font-weight: bold;
+    margin: 0;
+    color: #000; /* Color negro */
+    font-family: 'Arial', sans-serif; /* Familia de fuente */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Sombra del texto */
+  }
+  
+  .btn-logout {
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+  }
+  
+  .dashboard-content {
+    display: flex;
+    flex: 1;
+    width: 100%;
+    margin-top: 100px; /* Espacio para el header */
+  }
+  
+  .menu-panel {
+    background-color: rgba(248, 249, 250, 0.8); /* Fondo semitransparente */
+    padding: 20px;
+    height: calc(100vh - 100px); /* Altura completa menos el header */
+    width: 250px;
+    position: fixed;
+    top: 100px; /* Debajo del header */
+    left: 0;
+    overflow-y: auto; /* Para hacer scroll si el contenido es largo */
+    box-shadow: 2px 0 4px rgba(0,0,0,0.1);
+  }
+  
+  .menu-panel h3 {
+    margin-bottom: 10px;
+    color: #000; /* Color negro */
+  }
+  
+  .menu-panel ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu-panel ul li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-panel ul li a {
+    text-decoration: none;
+    color: #333;
+    display: flex;
+    align-items: center;
+  }
+  
+  .menu-panel ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-panel ul li a img {
+    margin-right: 10px; /* Espacio entre el icono y el texto */
+  }
+  
+  .additional-info {
+    margin-left: 270px; /* Para que el contenido no quede debajo del sidebar */
+    padding: 20px;
+    flex: 1;
+    color: #333; /* Color del texto */
+    background-color: rgba(255, 255, 255, 0.8); /* Fondo semitransparente */
+  }
+  
+  .additional-info h2 {
+    margin-bottom: 10px;
+    color: #222; /* Color del texto */
+  }
+  
+  .additional-info p {
+    color: #333; /* Color del texto */
+  }
+  
+  .location-label {
+    font-size: 14px;
+    color: #555;
+    margin-top: 20px;
+  }
+
+  .page-container {
+    padding: 20px;
+  }
+  
+  .page-header {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-panel, .inventory-panel {
+    background-color: #f0f0f0;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  input[type="text"] {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .inventory-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .inventory-item {
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+
+
+  
+  .white-panel {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
